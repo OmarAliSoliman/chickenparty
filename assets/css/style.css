@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* Constant styles  */
+@font-face {
+  font-family: flight;
+  src: url(../fonts/FoundersGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: fbold;
+  src: url(../fonts/FoundersGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: fmed;
+  src: url(../fonts/FoundersGrotesk-Medium.otf);
+}
+
+@font-face {
+  font-family: freg;
+  src: url(../fonts/FoundersGrotesk-Regular.otf);
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.topvideo {
+  position: relative;
+}
+
+.topvideo video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.topvideo::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(204, 48, 87, 0.36);
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.topvideo:before {
+  content: "";
+  background-image: url("../images/line-repeat.webp");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.topvideo .main-content {
+  position: relative;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.topvideo .main-content h5 {
+  font-size: 10rem;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.topvideo .main-content p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+}
+
+.topvideo .main-content .dont-click button {
+  background-color: #fff;
+  color: rgba(204, 48, 87, 0.36);
+  padding: 12px 50px;
+}
+
+.topvideo .main-content .dont-click button:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.topvideo .main-content .dont-click button:hover {
+  background-color: rgba(204, 48, 87, 0.36);
+  color: #fff;
+}
+
+#chickenModal .modal-dialog {
+  max-width: 98%;
+  width: 900px;
+  margin: auto;
+}
+
+#chickenModal .modal-header {
+  background-color: #fff;
+}
+
+#chickenModal .modal-content {
+  padding: 0;
+  background-color: transparent;
+}
+
+#chickenModal .modal-content .modal-body {
+  padding: 0;
+}
+
+#chickenModal .modal-content video {
+  width: 100%;
+}
+
+.timer #countdown-timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  margin-bottom: 33px;
+  margin-top: 72px;
+}
+
+.timer #countdown-timer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.timer #countdown-timer li strong {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: -5px;
+}
+
+.timer #countdown-timer li span {
+  color: rgba(255, 255, 255, 0.41);
+  margin-top: 0;
+}
+
+@media (max-width: 1025px) {
+  .topvideo .main-content h5 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+  .topvideo .main-content h5 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 524px) {
+  html {
+    font-size: 11px;
+  }
+  .topvideo .main-content h5 {
+    font-size: 5rem;
+  }
+  .timer #countdown-timer li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .main-content p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 5px !important;
+  }
+}
+
+/* Shared styles  */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="deshparty">
+    <div class="topvideo">
+      <video autoplay muted loop>
+        <source src="./assets/videos/pexels-nicole-michalou-5747359.mp4">
+      </video>
+      <div class="container">
+        <div class="main-content">
+          <h5>Comming Soon</h5>
+          <p>Dish party 🤟🥳🐓👏</p>
+
+
+          <div class="timer">
+            <ul id="countdown-timer" class="text-white list-unstyled">
+              <li>
+                <strong id="days" class="bold-number">00 </strong>
+                <span class="label">Days</span>
+              </li>
+              <li>
+                <strong id="hours" class="bold-number"> 00 </strong>
+                <span class="label">Hours</span>
+              </li>
+
+              <li>
+                <strong id="mins" class="bold-number"> 00 </strong>
+                <span class="label">Mins</span>
+              </li>
+
+              <li>
+                <strong id="seconds" class="bold-number"> 00 </strong>
+                <span class="label">Secs</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="dont-click">
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#chickenModal">Don't click me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="chickenModal" tabindex="-1" aria-labelledby="chickenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chickenModalLabel">I told you don't click me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video autoplay loop muted src="./assets/videos/pexels-rodnae-productions-5848512.mp4"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
